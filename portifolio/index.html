@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Diego Venancio</title>
+    <link rel="stylesheet" href="portifolio.css">
+    <script src="portifolio.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            width: 220px;
+            background: #222;
+            color: #fff;
+            padding-top: 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+        }
+        .sidebar nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar nav ul li {
+            margin: 20px 0;
+        }
+        .sidebar nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            display: block;
+            transition: background 0.2s;
+        }
+        .sidebar nav ul li a:hover {
+            background: #444;
+        }
+        .main-content {
+            margin-left: 220px;
+            padding: 30px;
+            flex: 1;
+        }
+        @media (max-width: 700px) {
+            .sidebar {
+                width: 100px;
+            }
+            .main-content {
+                margin-left: 100px;
+                padding: 15px;
+            }
+            .sidebar nav ul li a {
+                font-size: 0.9em;
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#sobre">Início</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Diego Venancio de Lima Moreira</h1>
+            <p>Graduando em Sistemas de Informação</p>
+        </header>
+
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Sou estudante de Sistemas de Informação na Universidade de Vila Velha, com experiência em desenvolvimento web e análise de banco de dados.</p>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiência Profissional</h2>
+            <ul>
+                <li><strong>Chocolates GAROTO</strong> - Auxiliar de produção (07/2023 – 02/2024)</li>
+                <li><strong>Casas Franklin</strong> - Operador de Caixa (11/2024 – 02/2025)</li>
+                <li><strong>Casas Franklin</strong>- Operador de caixa (25/05/25-atualmete)</li>
+            </ul>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Informática</li>
+                <li>Análise e desenvolvimento de Banco de dados</li>
+                <li>Trabalho em equipe</li>
+                <li>Resolução de problemas</li>
+                <li>Programação web</li>
+            </ul>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <ul>
+                <li><strong>Site para Fortes Engenharia- Facilitou envio de anexos e cadastro de pessoas. </strong></li>
+                <li><strong>Desenvolvimento de drones- Criado para auxiliar tarefas do dia a dia com eficiência.</strong></li>
+                <li><strong>Criação de site para um salão de beleza com envolvimento de APIs, pagamentos, banco de dados, entre outros</strong></li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Email: <a href="mailto:diegovenancio2005@gmail.com">diegovenancio2005@gmail.com</a></p>
+            <p>Telefone: (27) 99311-1872</p>
+            <p>LinkedIn: <a href="#">linkedin.com/diegomoreira</a></p>
+        </section>
+
+        <footer>
+            <p>© 2025 Diego Venancio - Todos os direitos reservados</p>
+        </footer>
+    </div>
+</body>
+</html>
